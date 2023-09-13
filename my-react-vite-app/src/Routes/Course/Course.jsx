@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Course.module.css"
+import styles from "./Course.module.css";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 
 const Course = () => {
@@ -139,44 +139,52 @@ const Course = () => {
   ];
 
   return (
-    <div className={styles.mainContainer} >
-      <Sidebar/>
-    <div>
-      <div>
-        <input type="text" placeholder="Search here" />
-        <button>SEARCH</button>
-      </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Instructor</th>
-            <th>Instrument</th>
-            <th>Day_of_Week</th>
-            <th>#_of_Students</th>
-            <th>Price</th>
-            <th>Status</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {courseList.map((el, index) => (
-            <tr key={index}>
-              <td>{el.Name}</td>
-              <td>{el.Description}</td>
-              <td>{el.Instructor}</td>
-              <td>{el.Instrument}</td>
-              <td>{el.Day_of_Week}</td>
-              <td>{el._of_Students}</td>
-              <td>{el.Price}</td>
-              <td>{el.Status}</td>
-              <td>{el.Actions}</td>
+    <div className={styles.mainContainer}>
+      <Sidebar />
+      <div className={styles.contentContainer}>
+        <div className={styles.heading}>Courses</div>
+        <div className={styles.subHeadingContainer}>
+          <div className={styles.subHeading}>Courses List</div>
+          <div>
+            <input
+              className={styles.input}
+              type="text"
+              placeholder="Search here"
+            />
+          </div>
+        </div>
+
+        <table className={styles.table} >
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Instructor</th>
+              <th>Instrument</th>
+              <th>Day_of_Week</th>
+              <th>#_of_Students</th>
+              <th>Price</th>
+              <th>Status</th>
+              <th>Actions</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+          </thead>
+          <tbody>
+            {courseList.map((el, index) => (
+              <tr key={index}>
+                <td>{el.Name}</td>
+                <td>{el.Description}</td>
+                <td>{el.Instructor}</td>
+                <td>{el.Instrument}</td>
+                <td>{el.Day_of_Week}</td>
+                <td>{el._of_Students}</td>
+                <td>{el.Price}</td>
+                <td>{el.Status}</td>
+                <td>{el.Actions}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
