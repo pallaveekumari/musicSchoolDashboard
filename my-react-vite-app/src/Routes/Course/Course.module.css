@@ -86,3 +86,66 @@ background:  #FFF;
 .td{
     text-align: left;
 }
+
+
+
+/* For screens smaller than 768px (e.g., mobile phones) */
+@media (max-width: 768px) {
+   
+    .contentContainer {
+      width: 100%;
+      padding: 16px;
+    }
+  
+    .subHeadingContainer {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-right: 0;
+    }
+  
+    .heading {
+      font-size: 24px;
+    }
+  
+    .subHeading {
+      font-size: 14px;
+    }
+  
+    .input {
+      padding: 0.3rem 0.6rem;
+      font-size: 10px;
+    }
+  
+    .tableContainer {
+      padding: 16px;
+    }
+  
+    .row {
+      padding: 2rem;
+    }
+  }
+  
+ 
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .contentContainer {
+      width: 80%;
+      padding: 20px;
+    }
+  
+    .subHeadingContainer {
+      padding-right: 1rem;
+    }
+  }
+  
+  
+  @media (min-width: 1025px) {
+    .contentContainer {
+      width: 1284px;
+      padding: 24px 36px;
+    }
+  
+    .subHeadingContainer {
+      padding-right: 3rem;
+    }
+  }
+  
