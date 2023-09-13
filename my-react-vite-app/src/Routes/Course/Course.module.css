@@ -54,6 +54,35 @@ background:  #FFF;
 }
 
 .table{
-    width: 80%;
+    margin-top: 2rem;
+    width: 100%;
     margin: auto;
+}
+
+.tableContainer{
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 7px;
+}
+
+.row{
+    border-bottom: 0.5px solid rgb(167, 166, 166,0.5);
+   padding: 5rem;
+}
+.rows{
+    border-bottom: 0.5px solid rgb(167, 166, 166,0.5);
+
+     padding: 3rem;
+     /* box-sizing: border-box; */
+}
+
+.td{
+    text-align: left;
 }
