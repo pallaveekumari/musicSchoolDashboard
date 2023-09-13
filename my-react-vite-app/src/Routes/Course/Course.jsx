@@ -1,29 +1,150 @@
-import React from 'react';
+import React from "react";
+import styles from "./Course.module.css"
+import Sidebar from "../../Components/Sidebar/Sidebar";
 
 const Course = () => {
-  
   const courseList = [
-    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
-    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
-    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
-    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
-    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
-    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
-    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
-    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
-    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
-    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
-    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
-    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
-
+    {
+      Name: "Classical Guitar",
+      Description: "Classical Guitar For...",
+      Instructor: "Ms. jane Doe",
+      Instrument: "Guitar",
+      Day_of_Week: "Wednesday",
+      _of_Students: "26",
+      Price: "$60",
+      Status: "Active",
+      Actions: ":",
+    },
+    {
+      Name: "Classical Guitar",
+      Description: "Classical Guitar For...",
+      Instructor: "Ms. jane Doe",
+      Instrument: "Guitar",
+      Day_of_Week: "Wednesday",
+      _of_Students: "26",
+      Price: "$60",
+      Status: "Active",
+      Actions: ":",
+    },
+    {
+      Name: "Classical Guitar",
+      Description: "Classical Guitar For...",
+      Instructor: "Ms. jane Doe",
+      Instrument: "Guitar",
+      Day_of_Week: "Wednesday",
+      _of_Students: "26",
+      Price: "$60",
+      Status: "Active",
+      Actions: ":",
+    },
+    {
+      Name: "Classical Guitar",
+      Description: "Classical Guitar For...",
+      Instructor: "Ms. jane Doe",
+      Instrument: "Guitar",
+      Day_of_Week: "Wednesday",
+      _of_Students: "26",
+      Price: "$60",
+      Status: "Active",
+      Actions: ":",
+    },
+    {
+      Name: "Classical Guitar",
+      Description: "Classical Guitar For...",
+      Instructor: "Ms. jane Doe",
+      Instrument: "Guitar",
+      Day_of_Week: "Wednesday",
+      _of_Students: "26",
+      Price: "$60",
+      Status: "Active",
+      Actions: ":",
+    },
+    {
+      Name: "Classical Guitar",
+      Description: "Classical Guitar For...",
+      Instructor: "Ms. jane Doe",
+      Instrument: "Guitar",
+      Day_of_Week: "Wednesday",
+      _of_Students: "26",
+      Price: "$60",
+      Status: "Active",
+      Actions: ":",
+    },
+    {
+      Name: "Classical Guitar",
+      Description: "Classical Guitar For...",
+      Instructor: "Ms. jane Doe",
+      Instrument: "Guitar",
+      Day_of_Week: "Wednesday",
+      _of_Students: "26",
+      Price: "$60",
+      Status: "Active",
+      Actions: ":",
+    },
+    {
+      Name: "Classical Guitar",
+      Description: "Classical Guitar For...",
+      Instructor: "Ms. jane Doe",
+      Instrument: "Guitar",
+      Day_of_Week: "Wednesday",
+      _of_Students: "26",
+      Price: "$60",
+      Status: "Active",
+      Actions: ":",
+    },
+    {
+      Name: "Classical Guitar",
+      Description: "Classical Guitar For...",
+      Instructor: "Ms. jane Doe",
+      Instrument: "Guitar",
+      Day_of_Week: "Wednesday",
+      _of_Students: "26",
+      Price: "$60",
+      Status: "Active",
+      Actions: ":",
+    },
+    {
+      Name: "Classical Guitar",
+      Description: "Classical Guitar For...",
+      Instructor: "Ms. jane Doe",
+      Instrument: "Guitar",
+      Day_of_Week: "Wednesday",
+      _of_Students: "26",
+      Price: "$60",
+      Status: "Active",
+      Actions: ":",
+    },
+    {
+      Name: "Classical Guitar",
+      Description: "Classical Guitar For...",
+      Instructor: "Ms. jane Doe",
+      Instrument: "Guitar",
+      Day_of_Week: "Wednesday",
+      _of_Students: "26",
+      Price: "$60",
+      Status: "Active",
+      Actions: ":",
+    },
+    {
+      Name: "Classical Guitar",
+      Description: "Classical Guitar For...",
+      Instructor: "Ms. jane Doe",
+      Instrument: "Guitar",
+      Day_of_Week: "Wednesday",
+      _of_Students: "26",
+      Price: "$60",
+      Status: "Active",
+      Actions: ":",
+    },
   ];
 
   return (
+    <div className={styles.mainContainer} >
+      <Sidebar/>
     <div>
       <div>
-
-      <input type="text" placeholder='Search here'/>
-      <button>SEARCH</button>
+        <input type="text" placeholder="Search here" />
+        <button>SEARCH</button>
       </div>
       <table>
         <thead>
@@ -55,6 +176,7 @@ const Course = () => {
           ))}
         </tbody>
       </table>
+    </div>
     </div>
   );
 };
