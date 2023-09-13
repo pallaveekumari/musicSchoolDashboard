@@ -20,6 +20,11 @@ const Course = () => {
 
   return (
     <div>
+      <div>
+
+      <input type="text" placeholder='Search here'/>
+      <button>SEARCH</button>
+      </div>
       <table>
         <thead>
           <tr>
