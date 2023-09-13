@@ -1,5 +1,5 @@
 import React from 'react';
-
+import styles from "../Overview/Overview.module.css"
 const Overview = () => {
   
   const latestEnrolments = [
@@ -28,7 +28,19 @@ const Overview = () => {
   ]
   return (
     <>
-    <div>
+    <div className={styles.overviewTextBox}>
+
+    <h1 className={styles.overviewText}>Overview</h1>
+    </div>
+    <div className={styles.numberBoxes}>
+      <div className={styles.number}></div>
+      <div className={styles.number}></div>
+      <div className={styles.number}></div>
+      <div className={styles.number}></div>
+      <div className={styles.number}></div>
+    </div>
+    
+    <div >
       <table>
         <thead>
           <tr>

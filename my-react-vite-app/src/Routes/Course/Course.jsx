@@ -2,10 +2,20 @@ import React from 'react';
 
 const Course = () => {
   
-  const data = [
-    { enrollmentNumber: '001', studentName: 'John Doe', courseName: 'Mathematics', fees: '$500', enrollmentDate: '2023-09-13' },
-    { enrollmentNumber: '002', studentName: 'Jane Smith', courseName: 'Physics', fees: '$450', enrollmentDate: '2023-09-14' },
-    
+  const courseList = [
+    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
+    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
+    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
+    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
+    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
+    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
+    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
+    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
+    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
+    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
+    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
+    { Name: 'Classical Guitar', Description: 'Classical Guitar For...', Instructor: 'Ms. jane Doe', Instrument: 'Guitar', Day_of_Week: 'Wednesday', _of_Students:'26', Price:'$60', Status: 'Active',Actions:':'},
+
   ];
 
   return (
@@ -13,21 +23,29 @@ const Course = () => {
       <table>
         <thead>
           <tr>
-            <th>Enr. No</th>
-            <th>S.Name</th>
-            <th>C.Name</th>
-            <th>Fees</th>
-            <th>Enr. Date</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Instructor</th>
+            <th>Instrument</th>
+            <th>Day_of_Week</th>
+            <th>#_of_Students</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          {data.map((item, index) => (
+          {courseList.map((el, index) => (
             <tr key={index}>
-              <td>{item.enrollmentNumber}</td>
-              <td>{item.studentName}</td>
-              <td>{item.courseName}</td>
-              <td>{item.fees}</td>
-              <td>{item.enrollmentDate}</td>
+              <td>{el.Name}</td>
+              <td>{el.Description}</td>
+              <td>{el.Instructor}</td>
+              <td>{el.Instrument}</td>
+              <td>{el.Day_of_Week}</td>
+              <td>{el._of_Students}</td>
+              <td>{el.Price}</td>
+              <td>{el.Status}</td>
+              <td>{el.Actions}</td>
             </tr>
           ))}
         </tbody>

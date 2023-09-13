@@ -1,8 +1,32 @@
-.overViewMainBox{
-    width: Fill (1,284px);
-height: Fixed (1,024px);
-padding: 24px 36px 24px 36px;
-gap: 32px;
-border: 4x solid black;
 
+.overviewText{
+
+
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #83858B;
+
+}
+.overviewTextBox{
+    width: 125px;
+height: 38px;
+border: 1px solid red;
+}
+
+.numberBoxes{
+    width: 1,212px;
+height: 98px;
+display: flex;
+justify-content: space-between;
+border:1px solid blue;
+
+}
+.number{
+    height: 232 px;
+    width: 98px;
+    border: 1px solid black;
 }
